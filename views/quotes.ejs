@@ -1,0 +1,14 @@
+<%- include('./partials/head') %>
+
+Quotes
+
+<% data.forEach(function(quote) { %>
+
+<blockquote><%- quote.text %>
+  <cite><%- quote.name %></cite>
+  <a href="/quote/<%- quote.quoteId %>">See only this quote</a>
+</blockquote>
+	
+<% }) %>
+
+<%- include('./partials/foot') %>
